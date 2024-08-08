@@ -50,7 +50,10 @@ variable "access_log" {
 variable "audit" {
   description = "The configuration of the audit."
   type        = map(string)
-  default     = {}
+  default     = {
+    
+
+  }
 }
 
 variable "kiali" {
@@ -68,11 +71,21 @@ variable "opa" {
 variable "proxy" {
   description = "The configuration of the Proxy. "
   type        = map(string)
-  default     = {}
+  default = {
+    limit_cpu      = "2000m"
+    limit_memory   = "1024Mi"
+    request_cpu    = "100m"
+    request_memory = "128Mi"
+  }
 }
 
 variable "sidecar_injector" {
   description = "The configuration of the Sidecar injector."
   type        = map(string)
-  default     = {}
+  default = {
+    limit_cpu      = "2000m"
+    limit_memory   = "1024Mi"
+    request_cpu    = "100m"
+    request_memory = "128Mi"
+  }
 }

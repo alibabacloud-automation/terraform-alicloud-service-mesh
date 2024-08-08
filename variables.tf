@@ -111,3 +111,9 @@ variable "sidecar_injector" {
   type        = map(string)
   default     = {}
 }
+
+variable "service_mesh_version" {
+  description = "The version of the resource. you can look up the version using `alicloud_service_mesh_versions`."
+  type        = string
+  default     = null
+}
