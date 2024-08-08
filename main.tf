@@ -4,6 +4,7 @@ resource "alicloud_service_mesh_service_mesh" "mesh" {
   service_mesh_name = var.name
   edition           = var.edition
   force             = var.force
+  version           = var.service_mesh_version
   network {
     vpc_id        = var.vpc_id
     vswitche_list = var.vswitche_ids
@@ -22,7 +23,7 @@ resource "alicloud_service_mesh_service_mesh" "mesh" {
       enabled = lookup(var.access_log, "enabled", false)
     }
     audit {
-      enabled = lookup(var.audit, "enabled", false)
+      enabled = lookup(var.audit, "enabled",null)
       project = lookup(var.audit, "project", null)
     }
     kiali {
