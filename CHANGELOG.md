@@ -1,4 +1,8 @@
 ## 1.2.0 (Unreleased)
+## 1.1.1 (2025-03-25)
+
+- examples/complete: improve the examples [GH-3](https://github.com/alibabacloud-automation/terraform-alicloud-service-mesh/pull/3)
+
 ## 1.1.0 (2024-08-08)
 
 - Module/alicloud_service_mesh_service_mesh: add attribute version.[GH-2](https://github.com/alibabacloud-automation/terraform-alicloud-service-mesh/pull/2)
