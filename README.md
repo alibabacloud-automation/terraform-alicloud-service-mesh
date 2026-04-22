@@ -37,12 +37,13 @@ module "example" {
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.13 |
+| <a name="requirement_alicloud"></a> [alicloud](#requirement\_alicloud) | >= 1.200.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_alicloud"></a> [alicloud](#provider\_alicloud) | n/a |
+| <a name="provider_alicloud"></a> [alicloud](#provider\_alicloud) | >= 1.200.0 |
 
 ## Modules
 
@@ -52,7 +53,7 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [alicloud_service_mesh_service_mesh.mesh](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/service_mesh_service_mesh) | resource |
+| [alicloud_service_mesh_service_mesh.mesh](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/service_mesh_service_mesh) | resource |
 
 ## Inputs
 
